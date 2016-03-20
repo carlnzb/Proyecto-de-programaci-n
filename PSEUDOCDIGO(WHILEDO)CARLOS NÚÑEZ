@@ -1,0 +1,36 @@
+INICIO {
+	MIENRAS QUE 
+	ESCRIBIR "Introduzca una nota" ;
+	LEER ¿(NOTA>=1 AND NOTA<=20)? { SI ES 'NO' ;
+	ESCRIBIR " SU NOTA NO PUEDE SER MENOR QUE 1 O TAMPOCO MAYOR QUE 20 "
+	}SI ES 'SI' : {
+	CONDICION1 = ¿ES (NOTA>=19 AND NOTA<=20)? { SI ES 'SI' ;
+	    LEER " A = NOTA "
+	    ESCRIBIR "NOTA ES A"
+	}SI ES 'NO' : {
+	CONDICIÓN2 = ¿ES (NOTA>=16 AND NOTA<=18)? { SI ES 'SI' ;
+	    LEER " B = NOTA "
+	    ESCRIBIR "NOTA ES B"
+	}SI ES 'NO' : {
+	    CONDICIÓN3 = ¿ES (NOTA>=13 AND NOTA<=15)? { SI ES 'SI' ;
+	        LEER "C = NOTA "
+	        ESCRIBIR "NOTA ES C"
+	        }SI ES 'NO' : {
+	           CONDICIÓN4 = ¿ES (NOTA>=10 AND NOTA<=12)? { SI ES 'SI' ;
+	               LEER "D = NOTA "
+	               ESCRIBIR "NOTA ES D"
+	               }SI ES 'NO' : {
+	               CONDICIÓN5 = ¿ES (NOTA>=1 AND NOTA<=9)? { SI ES 'SI' ;
+	                     LEER "E = NOTA "
+	                     ESCRIBIR "NOTA ES E"
+	                     }SI ES 'NO' : {
+	                         LEER "USTED TIENE UN PROBLEMA"
+
+	                    }
+
+	                    } SALIDA DE CONDICIÓN5
+	                } SALIDA DE CONDICIÓN4     
+                } SALIDA DE CONDICIÓN3
+            } SALIDA DE CONDICIÓN2
+        } SALIDA DE CONDICIÓN1
+FIN }         
